@@ -4,14 +4,14 @@ import static enumeration.ex3.Grade.*;
 
 public class DiscountService {
 
-    public int discount(Grade classGrade, int price) {
+    public int discount(Grade grade, int price) {
         int discountPercent = 0;
 
-        if (classGrade == A) {
+        if (grade == A) {
             discountPercent = 10;
-        } else if (classGrade == B) {
+        } else if (grade == B) {
             discountPercent = 20;
-        } else if (classGrade == C) {
+        } else if (grade == C) {
             discountPercent = 30;
         } else {
             System.out.println("할인이 적용되지 않습니다.");
